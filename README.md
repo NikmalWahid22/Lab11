@@ -174,6 +174,7 @@ Untuk mengecek daftar route yang sudah terdaftar, jalankan perintah:
 ```bash
 php spark routes
 ```
+![Gambar 1](Pertemuan12/postroutes.png)
 
 > Satu baris kode `resource()` akan secara otomatis menghasilkan banyak endpoint sekaligus untuk operasi GET, POST, PUT, dan DELETE.
 
@@ -194,6 +195,8 @@ Buka aplikasi Postman, pilih **Create New → HTTP Request**, lalu lakukan pengu
 
 Klik **Send**. Jika berhasil, semua data artikel dari database akan ditampilkan dalam format JSON.
 
+![Gambar 2](Pertemuan12/readdata.png)
+
 ---
 
 #### Menampilkan Data Spesifik
@@ -203,7 +206,9 @@ Klik **Send**. Jika berhasil, semua data artikel dari database akan ditampilkan 
 | **Method** | `GET` |
 | **URL** | `http://localhost:8080/post/2` |
 
-Klik **Send**. Response akan menampilkan data artikel dengan ID 2.
+Klik **Send**. Response akan menampilkan data artikel dengan ID 14.
+
+![Gambar 3](Pertemuan12/readID.png)
 
 ---
 
@@ -217,6 +222,8 @@ Klik **Send**. Response akan menampilkan data artikel dengan ID 2.
 
 Isi kolom **KEY** dengan nama atribut (`judul`, `isi`) dan kolom **VALUE** dengan data yang ingin ditambahkan, lalu klik **Send**.
 
+![Gambar 4](Pertemuan12/adddata.png)
+
 ---
 
 #### Mengubah Data
@@ -228,6 +235,8 @@ Isi kolom **KEY** dengan nama atribut (`judul`, `isi`) dan kolom **VALUE** denga
 | **Body** | `x-www-form-urlencoded` |
 
 Isi kolom **KEY** dan **VALUE** dengan data yang ingin diperbarui, lalu klik **Send**.
+
+![Gambar 5](Pertemuan12/editdata.png)
 
 ---
 
